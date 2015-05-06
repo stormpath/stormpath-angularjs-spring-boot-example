@@ -5,18 +5,19 @@
   "version": "1.0.0",
   "devDependencies": {
     "grunt": "~0.4.5",
-    "phantomjs": "~1.9.15",
+    "grunt-contrib-concat": "~0.5.1",
+    "grunt-contrib-uglify": "~0.9.1",
+    "grunt-contrib-cssmin": "~0.12.2",
+    "grunt-usemin": "~3.0.0",
+    "grunt-contrib-copy": "~0.8.0",
+    "grunt-rev": "~0.1.0",
+    "grunt-contrib-clean": "~0.6.0",
+    "load-grunt-tasks": "3.1.0",
     "karma": "~0.12",
     "karma-junit-reporter": "~0.2.2",
     "karma-jasmine": "~0.3.5",
     "karma-ng-scenario": "~0.1",
-    "protractor" : "~1.6.1",
-    "grunt-contrib-concat": "~0.3.0",
-    "grunt-contrib-uglify": "~0.2.7",
-    "grunt-contrib-cssmin": "~0.7.0",
-    "grunt-usemin": "~2.0.2",
-    "grunt-contrib-copy": "~0.5.0",
-    "grunt-rev": "~0.1.0",
-    "grunt-contrib-clean": "~0.5.0"
+    "phantomjs": "~1.9.16",
+    "protractor": "~2.0.0"
   }
 }
