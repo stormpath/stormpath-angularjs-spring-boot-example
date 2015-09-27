@@ -2,6 +2,7 @@ logs/*
 !.gitkeep
 dist/
 node_modules/
+bower_components/
 tmp
 .tmp/
 .DS_Store
