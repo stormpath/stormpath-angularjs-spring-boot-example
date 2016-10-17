@@ -9,6 +9,8 @@ framework and a bunch of development and testing tools for instant web developme
 
 The seed app doesn't do much, just shows how to wire two controllers and views together.
 
+**NOTE:** This fork of angular-seed contains [UI-Router](https://ui-router.github.io/) instead of the
+default router. It also integrates [gulp.js](http://gulpjs.com/) for building and managing dependencies.
 
 ## Getting Started
 
@@ -24,17 +26,17 @@ its package manager (npm) installed.  You can get them from [http://nodejs.org/]
 
 ### Clone angular-seed
 
-Clone the angular-seed repository using [git][git]:
+Clone this angular-seed repository using [git][git]:
 
 ```
-git clone https://github.com/angular/angular-seed.git
+git clone https://github.com/mraible/angular-seed.git
 cd angular-seed
 ```
 
 If you just want to start a new project without the angular-seed commit history then you can do:
 
 ```bash
-git clone --depth=1 https://github.com/angular/angular-seed.git <your-project-name>
+git clone --depth=1 https://github.com/mraible/angular-seed.git <your-project-name>
 ```
 
 The `depth=1` tells git to only pull down one commit worth of historical data.
