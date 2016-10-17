@@ -18,6 +18,7 @@
   <ul class="menu">
     <li><a ui-sref="view1">view1</a></li>
     <li><a ui-sref="view2">view2</a></li>
+    <li><a ui-sref="search">search</a></li>
   </ul>
 
   <!--[if lt IE 7]>
@@ -31,9 +32,13 @@
   <!-- build:js js/seed.min.js -->
   <script src="bower_components/angular/angular.js"></script>
   <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+  <script src="bower_components/angular-resource/angular-resource.js"></script>
   <script src="app.js"></script>
   <script src="view1/view1.js"></script>
   <script src="view2/view2.js"></script>
+  <script src="search/search.state.js"></script>
+  <script src="search/search.controller.js"></script>
+  <script src="search/search.service.js"></script>
   <script src="components/version/version.js"></script>
   <script src="components/version/version-directive.js"></script>
   <script src="components/version/interpolate-filter.js"></script>

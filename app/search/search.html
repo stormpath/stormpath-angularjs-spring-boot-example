@@ -1,0 +1,23 @@
+<form ng-submit="vm.search()">
+    <input type="search" name="search" ng-model="vm.term">
+    <button>Search</button>
+</form>
+
+<table ng-show="vm.searchResults.length">
+    <thead>
+    <tr>
+        <th>Name</th>
+        <th>Phone</th>
+        <th>Address</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr ng-repeat="person in vm.searchResults">
+        <td>{{person.name}}</td>
+        <td>{{person.phone}}</td>
+        <td>{{person.address.street}}<br/>
+            {{person.address.city}}, {{person.address.state}} {{person.address.zip}}
+        </td>
+    </tr>
+    </tbody>
+</table>
