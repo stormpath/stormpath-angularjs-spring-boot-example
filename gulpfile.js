@@ -1,4 +1,5 @@
 var gulp = require('gulp');
+var browserSync = require('browser-sync').create();
 $ = require('gulp-load-plugins')();
 
 gulp.task('clean', function () {
@@ -11,7 +12,7 @@ gulp.task('copy', ['clean'], function () {
         .pipe(gulp.dest('dist/.'));
 });
 
-gulp.task('usemin', ['copy'], function () {
+gulp.task('dist', ['copy'], function () {
     return gulp.src('app/index.html')
         .pipe($.usemin({
             css: [$.cleanCss(), $.rev()],
@@ -20,5 +21,15 @@ gulp.task('usemin', ['copy'], function () {
         .pipe(gulp.dest('dist/'));
 });
 
+gulp.task('serve', function() {
+
+    browserSync.init({
+        server: './app'
+    });
+
+    gulp.watch(['app/**/*.js', 'app/**/*.css', 'app/**/*.html'])
+        .on('change', browserSync.reload);
+});
+
 // Tell Gulp what to do when we type "gulp" into the terminal
-gulp.task('default', ['usemin']);
+gulp.task('default', ['serve']);
