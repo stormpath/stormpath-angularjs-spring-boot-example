@@ -1,0 +1,19 @@
+<form>
+    <div>
+        <label for="name">Name:</label>
+        <input type="text" ng-model="vm.person.name" id="name">
+    </div>
+    <div>
+        <label for="phone">Phone:</label>
+        <input type="text" ng-model="vm.person.phone" id="phone">
+    </div>
+    <fieldset>
+        <legend>Address:</legend>
+        <address style="margin-left: 50px">
+            <input type="text" ng-model="vm.person.address.street"><br/>
+            <input type="text" ng-model="vm.person.address.city">,
+            <input type="text" ng-model="vm.person.address.state" size="2">
+            <input type="text" ng-model="vm.person.address.zip" size="5">
+        </address>
+    </fieldset>
+</form>

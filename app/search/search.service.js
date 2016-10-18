@@ -19,6 +19,15 @@
             });
         };
 
+        Search.fetch = function (id, callback) {
+            Search.query(function (response) {
+                var results = response.filter(function (item) {
+                    return item.id === parseInt(id);
+                });
+                return callback(results[0]);
+            });
+        };
+
         return Search;
     }
 })();

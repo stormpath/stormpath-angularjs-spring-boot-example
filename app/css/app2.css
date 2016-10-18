@@ -23,3 +23,10 @@ td {
     padding: 8px;
 }
 
+form {
+    line-height: 2;
+}
+
+address {
+    font-style: normal;
+}

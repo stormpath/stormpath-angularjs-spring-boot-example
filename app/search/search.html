@@ -13,7 +13,7 @@
     </thead>
     <tbody>
     <tr ng-repeat="person in vm.searchResults">
-        <td>{{person.name}}</td>
+        <td><a ui-sref="edit({id: person.id})">{{person.name}}</a></td>
         <td>{{person.phone}}</td>
         <td>{{person.address.street}}<br/>
             {{person.address.city}}, {{person.address.state}} {{person.address.zip}}
