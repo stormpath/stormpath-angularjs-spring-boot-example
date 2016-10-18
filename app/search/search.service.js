@@ -8,11 +8,17 @@
     SearchService.$inject = ['$resource'];
 
     function SearchService($resource) {
-        var Search = $resource('/api/search/people.json');
+        var Search = $resource('http://localhost:8080/api/people', {}, {
+            'query': {isArray: false}
+        });
 
         Search.search = function (term, callback) {
+            if (term == undefined) {
+                term = '';
+            }
             Search.query(function (response) {
-                var results = response.filter(function (item) {
+                var people = response._embedded.people;
+                var results = people.filter(function (item) {
                     return JSON.stringify(item).toLowerCase().includes(term.toLowerCase());
                 });
                 return callback(results);
