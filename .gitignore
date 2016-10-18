@@ -7,3 +7,4 @@ tmp
 .tmp/
 .DS_Store
 .idea
+yarn.lock
