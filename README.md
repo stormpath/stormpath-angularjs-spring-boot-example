@@ -12,8 +12,8 @@ Through this project's commit logs, it shows you how to:
 
 **Prerequisites**: Java 8, Node.js, Maven, Gulp.js, a [Stormpath Account](https://api.stormpath.com/register), and an `apiKey.properties` file in `~/stormpath/`.
 
-To run the Spring Boot backend, run `mvn spring-boot:run`.
+To run the Spring Boot backend, execute `mvn spring-boot:run`.
 
-To run the AngularJS frontend, run `npm install && gulp`. 
+To run the AngularJS frontend, execute `npm install && gulp`. 
 
 See [@mraible/angular-seed](https://github.com/mraible/angular-seed/blob/master/README.md) to learn more about the the commands you can run in this project. 
