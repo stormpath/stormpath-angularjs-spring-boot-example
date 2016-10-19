@@ -11,6 +11,8 @@
     "angular-resource": "~1.5.0",
     "angular-mocks": "~1.5.0",
     "html5-boilerplate": "^5.3.0",
-    "angular-ui-router": "^0.3.1"
+    "angular-ui-router": "^0.3.1",
+    "stormpath-sdk-angularjs": "^1.0.0",
+    "bootstrap": "^3.3.7"
   }
 }

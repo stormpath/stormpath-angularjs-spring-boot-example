@@ -4,11 +4,13 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>My AngularJS App</title>
+  <base href="/">
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- build:css css/seed.min.css -->
   <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
   <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/app.css">
   <link rel="stylesheet" href="css/app2.css">
   <!-- endbuild -->
@@ -17,8 +19,10 @@
 <body>
   <ul class="menu">
     <li><a ui-sref="view1">view1</a></li>
-    <li><a ui-sref="view2">view2</a></li>
-    <li><a ui-sref="search">search</a></li>
+    <li if-user><a ui-sref="view2">view2</a></li>
+    <li if-user><a ui-sref="search">search</a></li>
+    <li if-not-user><a ui-sref="login">Login</a></li>
+    <li if-user><a href="" sp-logout>Logout</a>
   </ul>
 
   <!--[if lt IE 7]>
@@ -33,6 +37,8 @@
   <script src="bower_components/angular/angular.js"></script>
   <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
   <script src="bower_components/angular-resource/angular-resource.js"></script>
+  <script src="bower_components/stormpath-sdk-angularjs/dist/stormpath-sdk-angularjs.min.js"></script>
+  <script src="bower_components/stormpath-sdk-angularjs/dist/stormpath-sdk-angularjs.tpls.min.js"></script>
   <script src="app.js"></script>
   <script src="view1/view1.js"></script>
   <script src="view2/view2.js"></script>
@@ -41,6 +47,9 @@
   <script src="search/search.service.js"></script>
   <script src="edit/edit.state.js"></script>
   <script src="edit/edit.controller.js"></script>
+  <script src="login/login.state.js"></script>
+  <script src="register/register.state.js"></script>
+  <script src="forgot/forgot.state.js"></script>
   <script src="components/version/version.js"></script>
   <script src="components/version/version-directive.js"></script>
   <script src="components/version/interpolate-filter.js"></script>
