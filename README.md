@@ -23,4 +23,4 @@ To run the Spring Boot backend, execute `mvn spring-boot:run`.
 
 To run the AngularJS frontend, execute `npm install && gulp`. 
 
-See [@mraible/angular-seed](https://github.com/mraible/angular-seed/blob/master/README.md) to learn more about the the commands you can run in this project. 
+See [@mraible/angular-seed](https://github.com/mraible/angular-seed/blob/master/README.md) to learn more about the commands you can run in this project. 
